@@ -26,7 +26,6 @@ public class MainActivity extends AppCompatActivity {
         adapter.AddFragment(new FragmentInfo(), "");
         adapter.AddFragment(new FragmentGraph(), "");
         adapter.AddFragment(new FragmentPieChart(), "");
-        adapter.AddFragment(new FragmentFilms(), "");
 
         viewPager.setAdapter(adapter);
         tabLayout.setupWithViewPager(viewPager);
@@ -34,7 +33,6 @@ public class MainActivity extends AppCompatActivity {
         tabLayout.getTabAt(0).setIcon(R.drawable.ic_info);
         tabLayout.getTabAt(1).setIcon(R.drawable.ic_graph);
         tabLayout.getTabAt(2).setIcon(R.drawable.ic_pie_chart);
-        tabLayout.getTabAt(3).setIcon(R.drawable.ic_films);
 
         //Shadow removing
         ActionBar actionBar = getSupportActionBar();
